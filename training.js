@@ -69,7 +69,7 @@ function highAndLow(numbers){
 
 
     //Morse 
-    var uniqueMorseRepresentations = function(words) {
+  /*   var uniqueMorseRepresentations = function(words) {
       let ab="abcdefghijklmnopqrstuvwxyz";
       let Morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."];
       let abc = ab.split("");
@@ -88,9 +88,23 @@ function highAndLow(numbers){
       }
       }
       }
-  };
+  }; */
+  //Cambiar string por una palabra en especifico
 
-
-    
+  function changeWords(x){
+    console.log(x)  
+    let wordChange= "hola "
+     let separ = x.split(' ');
+      console.log(separ.length)
+      if(x === "") {
+        return ""
+      }
+      let result = wordChange.repeat(separ.length).slice(0, -1);
+      console.log(result)
+    return result
+        
+  }
+  changeWords("hola")
+  console.log(changeWords("esto es una prueba"))
 
     
