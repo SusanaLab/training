@@ -89,6 +89,7 @@ function highAndLow(numbers){
       }
       }
   }; */
+  
   //Cambiar string por una palabra en especifico
 
   function changeWords(x){
@@ -107,4 +108,38 @@ function highAndLow(numbers){
   changeWords("hola")
   console.log(changeWords("esto es una prueba"))
 
+//Imprime el numero primo mayor y menor que el numero que ingresas en la funcion
+
+  function primeBefAft(num) {
+    let noPrimo = [];
+    let primo = []
+    let arrayFinal= primo;
     
+    
+    for(let i = 0;i <= num+10;i++){  
+      if (i%5 === 0){
+        noPrimo.push(i)
+      }else if (i%3 === 0){
+        noPrimo.push(i) 
+      }else if(i%2 ===0){
+        noPrimo.push(i)   
+      } else{
+        primo.push(i) 
+      }
+    }
+  
+    let lesss = arrayFinal.filter(number => number < num).reverse(); 
+    let greater = arrayFinal.filter(number => number > num); 
+    let menor = lesss[0];
+    console.log(menor)
+     let mayor = greater[0];
+    console.log(mayor)
+    let result = [menor, mayor]
+    console.log(result)
+    return result
+    
+    
+  }
+
+  primeBefAft(34)
+  console.log(primeBefAft(34))
