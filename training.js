@@ -1,4 +1,4 @@
-//Evaluar si una cadena tiene espacios y eliminarlos
+//1.Evaluar si una cadena tiene espacios y eliminarlos
 
 function noSpace(x){
     let result = x.replace(/ /g, "");
@@ -9,7 +9,7 @@ noSpace("hola pe u k")
 console.log(noSpace("hola pe u k"))
 
 
-// encontrar el numero mas grande y el mas pequeño 
+// 2. encontrar el numero mas grande y el mas pequeño 
 function highAndLow(numbers){
     //separar string
     //Ordenar arreglo
@@ -26,11 +26,11 @@ function highAndLow(numbers){
       return result
     }
 
-   let res = highAndLow();
+    highAndLow(numbers);
     console.log(highAndLow("1 2 -3 4 5"))
-    document.getElementById("answer1").innerHTML = res;
+   
 
- //Transformar palabra   
+ //3. Transformar palabra   
     function transform(source, target) { //car.  see
       let arr = []
       arr.push(source);
@@ -68,7 +68,7 @@ function highAndLow(numbers){
     console.log(transform(car, see ))
 
 
-    //Morse 
+    //4. Morse 
   /*   var uniqueMorseRepresentations = function(words) {
       let ab="abcdefghijklmnopqrstuvwxyz";
       let Morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."];
@@ -90,7 +90,7 @@ function highAndLow(numbers){
       }
   }; */
 
-  //Cambiar string por una palabra en especifico
+  //5. Cambiar string por una palabra en especifico
 
   function changeWords(x){
     console.log(x)  
@@ -108,7 +108,7 @@ function highAndLow(numbers){
   changeWords("hola")
   console.log(changeWords("esto es una prueba"))
 
-//Imprime el numero primo mayor y menor que el numero que ingresas en la funcion
+//6. Imprime el numero primo mayor y menor que el numero que ingresas en la funcion
 
   function primeBefAft(num) {
     let noPrimo = [];
@@ -144,7 +144,7 @@ function highAndLow(numbers){
   primeBefAft(34)
   console.log(primeBefAft(34))
 
-  //For this game of BINGO, you will receive a single array of 10 numbers from 1 to 26 as an input. Duplicate numbers within the array are possible.
+  // 7.For this game of BINGO, you will receive a single array of 10 numbers from 1 to 26 as an input. Duplicate numbers within the array are possible.
 
 /* Each number corresponds to their alphabetical order letter (e.g. 1 = A. 2 = B, etc).
 Write a function where you will win the game if your numbers can spell "BINGO".
@@ -161,3 +161,20 @@ console.log(a)
 }
 bingo(win)
 console.log(bingo(lose))
+
+
+function love6(a, b){  
+  console.log(a)
+  if(a + b === 6 ){
+    return true + "en suma"
+  }else if (a - b === 6){
+    return true + "en diferencia"
+  } else if (a === 6){
+    return true + "en a"
+  } else if (b === 6){
+    return true + "en b"
+  }else{ return false}
+}
+
+
+console.log(love6(10, 4))
